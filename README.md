@@ -1,45 +1,74 @@
-# AI-Chatbot
-Overview
+# AI Chatbot
 
-The NDMC AI Chatbot is an intelligent conversational assistant developed to enhance public service delivery for the New Delhi Municipal Council (NDMC). The chatbot provides citizens with quick access to information related to municipal services, grievance support, bill payments, sanitation, water supply, and other civic services.
+## Overview
 
-Features
+The NDMC AI Chatbot is an intelligent citizen service assistant developed for the New Delhi Municipal Council (NDMC). The chatbot helps citizens access information related to municipal services such as property tax, water supply, electricity services, complaints, certificates, and NDMC 311.
 
-- AI-Powered Conversational Interface
-- Natural Language Query Processing
-- NDMC Service Information Assistance
-- Grievance Support and Guidance
-- Real-Time Information Retrieval
-- FAQ Automation
-- User-Friendly Web Interface
-- 24/7 Citizen Support
+The system uses Natural Language Processing (NLP), semantic search, and Retrieval-Augmented Generation (RAG) techniques to provide relevant responses to user queries.
 
-Technology Stack
+---
 
-- Python
-- OpenAI API
-- Gradio
-- BeautifulSoup
-- Requests Library
-- Regular Expressions (Regex)
-- Natural Language Processing (NLP)
+## Features
 
-Project Structure
+* AI-Powered Citizen Assistance
+* Natural Language Query Processing
+* Semantic Search-Based Information Retrieval
+* Property Tax Information Support
+* Water and Electricity Service Assistance
+* Complaint Registration Guidance
+* NDMC 311 Information Support
+* Birth and Death Certificate Information
+* Interactive Web Interface using Gradio
+* Fast and User-Friendly Experience
 
-```text
-NDMC-AI-Chatbot/
-├── Source_Code/
-├── Documentation/
-├── Dataset/
-├── Report/
-└── Presentation/
-```
+---
 
-Working Principle
+## Technology Stack
 
-1. Users enter queries through the chatbot interface.
-2. The system processes the query using NLP techniques.
-3. Relevant information is retrieved from the knowledge base or web sources.
-4. The OpenAI model generates a contextual response.
-5. The chatbot returns a user-friendly answer to the citizen.
+* Python
+* Sentence Transformers
+* Transformers
+* TinyLlama
+* Gradio
+* Pandas
+* Natural Language Processing (NLP)
+* Retrieval-Augmented Generation (RAG)
 
+---
+
+## Project Architecture
+
+User Query
+↓
+Sentence Transformer Embeddings
+↓
+Semantic Similarity Search
+↓
+NDMC Knowledge Base
+↓
+Relevant Information Retrieval
+↓
+Response Generation
+↓
+Gradio Interface
+
+---
+
+## Working Principle
+
+1. The user enters a query through the chatbot interface.
+2. The query is converted into vector embeddings.
+3. Semantic similarity search identifies the most relevant NDMC information.
+4. The chatbot retrieves the relevant content from the knowledge base.
+5. The response is displayed through the Gradio web interface.
+
+---
+
+## Example Queries
+
+* How can I pay my property tax?
+* What is NDMC 311?
+* How can I register a complaint?
+* How can I book a water tanker?
+* How can I get a birth certificate?
+* What services does NDMC provide?
